@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Charger App</string>
+
+    <string name="dashboard">Dashboard</string>
+    <string name="search">Search</string>
+    <string name="map">Map</string>
+    <string name="profile">Profile</string>
+</resources>

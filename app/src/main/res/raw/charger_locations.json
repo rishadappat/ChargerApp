@@ -1,0 +1,638 @@
+{
+  "pageId": 2,
+  "pageSize": 50,
+  "recordCount": 21,
+  "recordCountTotal": 6601,
+  "results": [
+    {
+      "id": 1458,
+      "locationId": "hattasupercharger",
+      "name": "Hatta, UAE",
+      "status": "OPEN",
+      "address": {
+        "street": "102 Sharjah kalba Road",
+        "city": "Dubai",
+        "state": "Dubai",
+        "zip": null,
+        "countryId": 134,
+        "country": "United Arab Emirates",
+        "regionId": 102,
+        "region": "Asia Pacific"
+      },
+      "gps": {
+        "latitude": 24.819503,
+        "longitude": 56.134411
+      },
+      "dateOpened": "2017-12-22",
+      "stallCount": 4,
+      "counted": true,
+      "elevationMeters": 309,
+      "powerKilowatt": 150,
+      "solarCanopy": false,
+      "battery": false,
+      "otherEVs": false,
+      "statusDays": 0,
+      "urlDiscuss": true
+    },
+    {
+      "id": 7084,
+      "locationId": "290256",
+      "name": "Abu Dhabi - Yas Mall Hypermarket Lower Ground, UAE",
+      "status": "OPEN",
+      "address": {
+        "street": "Yas Mall, Hypermarket Lower Ground, Yas Island, Abu Dhabi",
+        "city": "Abu Dhabi",
+        "state": "Abu Dhabi",
+        "zip": null,
+        "countryId": 134,
+        "country": "United Arab Emirates",
+        "regionId": 102,
+        "region": "Asia Pacific"
+      },
+      "gps": {
+        "latitude": 24.489559,
+        "longitude": 54.611835
+      },
+      "dateOpened": "2023-10-25",
+      "stallCount": 8,
+      "counted": true,
+      "elevationMeters": 2,
+      "powerKilowatt": 250,
+      "solarCanopy": false,
+      "battery": false,
+      "otherEVs": false,
+      "statusDays": 0,
+      "urlDiscuss": false
+    },
+    {
+      "id": 7083,
+      "locationId": "413819",
+      "name": "Abu Dhabi - Yas Mall Main Entrance, UAE",
+      "status": "OPEN",
+      "address": {
+        "street": "Yas Mall, Main Entrance 1, Yas Island, Abu Dhabi",
+        "city": "Abu Dhabi",
+        "state": "Abu Dhabi",
+        "zip": null,
+        "countryId": 134,
+        "country": "United Arab Emirates",
+        "regionId": 102,
+        "region": "Asia Pacific"
+      },
+      "gps": {
+        "latitude": 24.490452,
+        "longitude": 54.61007
+      },
+      "dateOpened": "2023-10-25",
+      "stallCount": 4,
+      "counted": true,
+      "elevationMeters": 7,
+      "powerKilowatt": 250,
+      "solarCanopy": false,
+      "battery": false,
+      "otherEVs": false,
+      "statusDays": 0,
+      "urlDiscuss": false
+    },
+    {
+      "id": 2631,
+      "locationId": "jebelaliabudhabiboundsupercharger",
+      "name": "Jebel Ali - Abu Dhabi bound, UAE",
+      "status": "OPEN",
+      "address": {
+        "street": "Sheikh Zayed Rd",
+        "city": "Dubai",
+        "state": "Dubai",
+        "zip": null,
+        "countryId": 134,
+        "country": "United Arab Emirates",
+        "regionId": 102,
+        "region": "Asia Pacific"
+      },
+      "gps": {
+        "latitude": 24.913898,
+        "longitude": 54.961102
+      },
+      "dateOpened": "2020-12-24",
+      "stallCount": 8,
+      "counted": true,
+      "elevationMeters": 5,
+      "powerKilowatt": 250,
+      "solarCanopy": false,
+      "battery": false,
+      "otherEVs": false,
+      "statusDays": 0,
+      "urlDiscuss": true
+    },
+    {
+      "id": 3320,
+      "locationId": "alainsupercharger",
+      "name": "Al Ain - Hazza Bin Zayed Stadium, UAE",
+      "status": "OPEN",
+      "address": {
+        "street": "Al Za’eem Street",
+        "city": "Al Ain",
+        "state": "Abu Dhabi",
+        "zip": null,
+        "countryId": 134,
+        "country": "United Arab Emirates",
+        "regionId": 102,
+        "region": "Asia Pacific"
+      },
+      "gps": {
+        "latitude": 24.247033,
+        "longitude": 55.715946
+      },
+      "dateOpened": "2021-06-01",
+      "stallCount": 3,
+      "counted": true,
+      "elevationMeters": 264,
+      "powerKilowatt": 250,
+      "solarCanopy": false,
+      "battery": false,
+      "otherEVs": false,
+      "statusDays": 0,
+      "urlDiscuss": true
+    },
+    {
+      "id": 3973,
+      "locationId": "mallofemiratessupercharger",
+      "name": "Dubai - Mall of The Emirates, UAE",
+      "status": "OPEN",
+      "address": {
+        "street": "Sheikh Zayed Rd - Al Barsha 1",
+        "city": "Dubai",
+        "state": "Dubai",
+        "zip": null,
+        "countryId": 134,
+        "country": "United Arab Emirates",
+        "regionId": 102,
+        "region": "Asia Pacific"
+      },
+      "gps": {
+        "latitude": 25.117407,
+        "longitude": 55.201595
+      },
+      "dateOpened": "2022-01-18",
+      "stallCount": 8,
+      "counted": true,
+      "elevationMeters": 0,
+      "powerKilowatt": 250,
+      "solarCanopy": false,
+      "battery": false,
+      "otherEVs": false,
+      "statusDays": 0,
+      "urlDiscuss": true
+    },
+    {
+      "id": 4134,
+      "locationId": "masdarcentralparksupercharger",
+      "name": "Masdar - Central Park, UAE",
+      "status": "OPEN",
+      "address": {
+        "street": "[unnamed road], Masdar City",
+        "city": "Masdar",
+        "state": "Abu Dhabi",
+        "zip": null,
+        "countryId": 134,
+        "country": "United Arab Emirates",
+        "regionId": 102,
+        "region": "Asia Pacific"
+      },
+      "gps": {
+        "latitude": 24.43096,
+        "longitude": 54.61766
+      },
+      "dateOpened": "2022-03-06",
+      "stallCount": 4,
+      "counted": true,
+      "elevationMeters": 5,
+      "powerKilowatt": 150,
+      "solarCanopy": false,
+      "battery": false,
+      "otherEVs": false,
+      "statusDays": 0,
+      "urlDiscuss": true
+    },
+    {
+      "id": 3724,
+      "locationId": "RasAlKhaimahaesupercharger",
+      "name": "Ras Al Khaimah, UAE",
+      "status": "OPEN",
+      "address": {
+        "street": "Bin Daher Street - Dafan Al Nakheel",
+        "city": "Ras Al Khaimah",
+        "state": "Ras Al Khaimah",
+        "zip": null,
+        "countryId": 134,
+        "country": "United Arab Emirates",
+        "regionId": 102,
+        "region": "Asia Pacific"
+      },
+      "gps": {
+        "latitude": 25.791492,
+        "longitude": 55.966309
+      },
+      "dateOpened": "2021-09-30",
+      "stallCount": 8,
+      "counted": true,
+      "elevationMeters": 3,
+      "powerKilowatt": 250,
+      "solarCanopy": false,
+      "battery": false,
+      "otherEVs": false,
+      "statusDays": 0,
+      "urlDiscuss": true
+    },
+    {
+      "id": 4135,
+      "locationId": "78900",
+      "name": "Al Ain - Aloft Hotel, UAE",
+      "status": "OPEN",
+      "address": {
+        "street": "Al Ain Square",
+        "city": "Al Towayya, Al Ain",
+        "state": "Abu Dhabi",
+        "zip": null,
+        "countryId": 134,
+        "country": "United Arab Emirates",
+        "regionId": 102,
+        "region": "Asia Pacific"
+      },
+      "gps": {
+        "latitude": 24.24431,
+        "longitude": 55.71567
+      },
+      "dateOpened": "2022-03-01",
+      "stallCount": 4,
+      "counted": true,
+      "elevationMeters": 264,
+      "powerKilowatt": 150,
+      "solarCanopy": false,
+      "battery": false,
+      "otherEVs": false,
+      "statusDays": 0,
+      "urlDiscuss": true
+    },
+    {
+      "id": 4399,
+      "locationId": "alhabtoorcitysupercharger",
+      "name": "Dubai - Al Habtoor City, UAE",
+      "status": "OPEN",
+      "address": {
+        "street": "Al Habtoor City, Sheikh Zayed Road",
+        "city": "Dubai",
+        "state": "Dubai",
+        "zip": null,
+        "countryId": 134,
+        "country": "United Arab Emirates",
+        "regionId": 102,
+        "region": "Asia Pacific"
+      },
+      "gps": {
+        "latitude": 25.184568,
+        "longitude": 55.254376
+      },
+      "dateOpened": "2022-07-02",
+      "stallCount": 12,
+      "counted": true,
+      "elevationMeters": 2,
+      "powerKilowatt": 250,
+      "solarCanopy": false,
+      "battery": false,
+      "otherEVs": false,
+      "statusDays": 0,
+      "urlDiscuss": true
+    },
+    {
+      "id": 6624,
+      "locationId": "323627",
+      "name": "Dubai - Wafi City, UAE",
+      "status": "OPEN",
+      "address": {
+        "street": "Wafi City, Oud Metha Rd, Dubai DBX",
+        "city": "Dubai",
+        "state": "Dubai",
+        "zip": null,
+        "countryId": 134,
+        "country": "United Arab Emirates",
+        "regionId": 102,
+        "region": "Asia Pacific"
+      },
+      "gps": {
+        "latitude": 25.230682,
+        "longitude": 55.318576
+      },
+      "dateOpened": "2022-12-21",
+      "stallCount": 8,
+      "counted": true,
+      "elevationMeters": 2,
+      "powerKilowatt": 250,
+      "solarCanopy": false,
+      "battery": false,
+      "otherEVs": false,
+      "statusDays": 0,
+      "urlDiscuss": false
+    },
+    {
+      "id": 5685,
+      "locationId": "AlWarqa422",
+      "name": "Dubai - Al Warqa, UAE",
+      "status": "OPEN",
+      "address": {
+        "street": "Al Habtoor Polo Resort Wadi Ai Safa 5, Emirates Road 611 Dubai DB",
+        "city": "Dubai",
+        "state": "Dubai",
+        "zip": "00000",
+        "countryId": 134,
+        "country": "United Arab Emirates",
+        "regionId": 102,
+        "region": "Asia Pacific"
+      },
+      "gps": {
+        "latitude": 25.079477,
+        "longitude": 55.366287
+      },
+      "dateOpened": "2023-07-17",
+      "stallCount": 8,
+      "counted": true,
+      "elevationMeters": 7,
+      "powerKilowatt": 250,
+      "solarCanopy": false,
+      "battery": false,
+      "otherEVs": false,
+      "statusDays": 0,
+      "urlDiscuss": false
+    },
+    {
+      "id": 6626,
+      "locationId": "331142",
+      "name": "Masdar - City Center, UAE",
+      "status": "OPEN",
+      "address": {
+        "street": "My City Centre, Masdar, 1 Masdar, Abu Dhabi",
+        "city": "Masdar",
+        "state": "Abu Dhabi",
+        "zip": null,
+        "countryId": 134,
+        "country": "United Arab Emirates",
+        "regionId": 102,
+        "region": "Asia Pacific"
+      },
+      "gps": {
+        "latitude": 24.429573,
+        "longitude": 54.620563
+      },
+      "dateOpened": "2023-07-17",
+      "stallCount": 8,
+      "counted": true,
+      "elevationMeters": 6,
+      "powerKilowatt": 250,
+      "solarCanopy": false,
+      "battery": false,
+      "otherEVs": false,
+      "statusDays": 0,
+      "urlDiscuss": false
+    },
+    {
+      "id": 3386,
+      "locationId": "zaabeelsupercharger",
+      "name": "Dubai - Za'abeel, UAE",
+      "status": "OPEN",
+      "address": {
+        "street": "Dubai Urban 2 Za'abeel",
+        "city": "Dubai",
+        "state": "Dubai",
+        "zip": null,
+        "countryId": 134,
+        "country": "United Arab Emirates",
+        "regionId": 102,
+        "region": "Asia Pacific"
+      },
+      "gps": {
+        "latitude": 25.199909,
+        "longitude": 55.281854
+      },
+      "dateOpened": "2021-08-15",
+      "stallCount": 8,
+      "counted": true,
+      "elevationMeters": 1,
+      "powerKilowatt": 250,
+      "solarCanopy": false,
+      "battery": false,
+      "otherEVs": false,
+      "statusDays": 0,
+      "urlDiscuss": true
+    },
+    {
+      "id": 1033,
+      "locationId": "jebelalidubaiboundsupercharger",
+      "name": "Jebel Ali - Dubai bound, UAE",
+      "status": "OPEN",
+      "address": {
+        "street": "Sheikh Zayed Road",
+        "city": "Dubai",
+        "state": "Dubai",
+        "zip": null,
+        "countryId": 134,
+        "country": "United Arab Emirates",
+        "regionId": 102,
+        "region": "Asia Pacific"
+      },
+      "gps": {
+        "latitude": 24.910732,
+        "longitude": 54.962517
+      },
+      "dateOpened": "2017-02-14",
+      "stallCount": 4,
+      "counted": true,
+      "elevationMeters": 7,
+      "powerKilowatt": 150,
+      "solarCanopy": false,
+      "battery": false,
+      "otherEVs": false,
+      "statusDays": 0,
+      "urlDiscuss": true
+    },
+    {
+      "id": 4398,
+      "locationId": "ajmansuperchargerq122",
+      "name": "Ajman, UAE",
+      "status": "OPEN",
+      "address": {
+        "street": "City Centre , Al Ittihad St",
+        "city": "Ajman",
+        "state": "Ajman",
+        "zip": null,
+        "countryId": 134,
+        "country": "United Arab Emirates",
+        "regionId": 102,
+        "region": "Asia Pacific"
+      },
+      "gps": {
+        "latitude": 25.39817,
+        "longitude": 55.479425
+      },
+      "dateOpened": "2022-07-02",
+      "stallCount": 8,
+      "hours": "Mon-Sun  9am-11:59pm",
+      "counted": true,
+      "elevationMeters": 2,
+      "powerKilowatt": 250,
+      "solarCanopy": false,
+      "battery": false,
+      "otherEVs": false,
+      "statusDays": 0,
+      "urlDiscuss": true
+    },
+    {
+      "id": 5503,
+      "locationId": "Mirfasupercharger",
+      "name": "Al Mirfa, UAE",
+      "status": "OPEN",
+      "address": {
+        "street": "Al Mirfa Hotel, Abu Dhabi Road, Al Marfa",
+        "city": "Al Mirfa",
+        "state": "Abu Dhabi",
+        "zip": null,
+        "countryId": 134,
+        "country": "United Arab Emirates",
+        "regionId": 102,
+        "region": "Asia Pacific"
+      },
+      "gps": {
+        "latitude": 24.099498,
+        "longitude": 53.476532
+      },
+      "dateOpened": "2022-10-06",
+      "stallCount": 8,
+      "counted": true,
+      "elevationMeters": 7,
+      "powerKilowatt": 250,
+      "solarCanopy": false,
+      "battery": false,
+      "otherEVs": false,
+      "statusDays": 0,
+      "urlDiscuss": false
+    },
+    {
+      "id": 5502,
+      "locationId": "Fujairahq222",
+      "name": "Fujairah, UAE",
+      "status": "OPEN",
+      "address": {
+        "street": "Century Mall, Al Qasar Road, Near Umbrealla Beach, Fujairah",
+        "city": "Fujairah",
+        "state": "Fujairah",
+        "zip": null,
+        "countryId": 134,
+        "country": "United Arab Emirates",
+        "regionId": 102,
+        "region": "Asia Pacific"
+      },
+      "gps": {
+        "latitude": 25.157363,
+        "longitude": 56.350036
+      },
+      "dateOpened": "2022-10-17",
+      "stallCount": 8,
+      "counted": true,
+      "elevationMeters": 5,
+      "powerKilowatt": 250,
+      "solarCanopy": false,
+      "battery": false,
+      "otherEVs": false,
+      "statusDays": 0,
+      "urlDiscuss": false
+    },
+    {
+      "id": 5715,
+      "locationId": "sharjahsuperchargerq122",
+      "name": "Sharjah, UAE",
+      "status": "OPEN",
+      "address": {
+        "street": "City Centre Sharjah Al Wahda St Sharjah",
+        "city": "Sharjah",
+        "state": "Sharjah",
+        "zip": null,
+        "countryId": 134,
+        "country": "United Arab Emirates",
+        "regionId": 102,
+        "region": "Asia Pacific"
+      },
+      "gps": {
+        "latitude": 25.32563,
+        "longitude": 55.394708
+      },
+      "dateOpened": "2022-12-21",
+      "stallCount": 8,
+      "counted": true,
+      "elevationMeters": 4,
+      "powerKilowatt": 250,
+      "solarCanopy": false,
+      "battery": false,
+      "otherEVs": false,
+      "statusDays": 0,
+      "urlDiscuss": false
+    },
+    {
+      "id": 5714,
+      "locationId": "AbuDhabiaesupercharger",
+      "name": "Abu Dhabi - Al Maryah, UAE",
+      "status": "OPEN",
+      "address": {
+        "street": "Hamouda Bin Ali Al Dhaheri St Jazeerat Al Maryah - Abu Dhab",
+        "city": "Abu Dhabi",
+        "state": "Abu Dhabi",
+        "zip": null,
+        "countryId": 134,
+        "country": "United Arab Emirates",
+        "regionId": 102,
+        "region": "Asia Pacific"
+      },
+      "gps": {
+        "latitude": 24.501471,
+        "longitude": 54.391068
+      },
+      "dateOpened": "2022-12-21",
+      "stallCount": 8,
+      "counted": true,
+      "elevationMeters": 1,
+      "powerKilowatt": 250,
+      "solarCanopy": false,
+      "battery": false,
+      "otherEVs": false,
+      "statusDays": 0,
+      "urlDiscuss": false
+    },
+    {
+      "id": 1034,
+      "locationId": "masdarcitysupercharger",
+      "name": "Masdar City, UAE",
+      "status": "CLOSED_PERM",
+      "address": {
+        "street": "Masdar City",
+        "city": "Masdar",
+        "state": "Abu Dhabi",
+        "zip": null,
+        "countryId": 134,
+        "country": "United Arab Emirates",
+        "regionId": 102,
+        "region": "Asia Pacific"
+      },
+      "gps": {
+        "latitude": 24.440819,
+        "longitude": 54.618899
+      },
+      "stallCount": 4,
+      "counted": true,
+      "elevationMeters": 4,
+      "powerKilowatt": 130,
+      "solarCanopy": false,
+      "battery": false,
+      "otherEVs": false,
+      "statusDays": 240,
+      "urlDiscuss": true
+    }
+  ]
+}
