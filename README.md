@@ -35,7 +35,8 @@ Please find the project folder structure.
     <td><img src="screens/search.png" width=270 height=585></td>
     <td><img src="screens/map.png" width=270 height=585></td>
   </tr>
-    <tr><img src="screens/station_details.png" width=270 height=585></td>
+    <tr>
+    <td><img src="screens/station_details.png" width=270 height=585></td>
     <td><img src="screens/profile.png" width=270 height=585></td>
   </tr>
  </table>
