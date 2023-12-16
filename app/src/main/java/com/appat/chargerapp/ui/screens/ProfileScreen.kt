@@ -85,7 +85,7 @@ fun ProfileScreen() {
                         painter = painterResource(R.drawable.profile_pic),
                         contentDescription = "Profile Pic")
                     Spacer(modifier = Modifier.height(40.dp))
-                    Text(text = "Rishad Appat",
+                    Text(text = "John Doe",
                         fontWeight = FontWeight.Bold,
                         fontSize = 28.sp,
                         color = MaterialTheme.colors.onBackground)

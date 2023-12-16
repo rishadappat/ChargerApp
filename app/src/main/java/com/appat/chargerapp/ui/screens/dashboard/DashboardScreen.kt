@@ -31,7 +31,7 @@ fun DashboardScreen(onClick: (ChargingStation) -> Unit = {}) {
             .fillMaxSize(),
         scaffoldState = scaffoldState,
         appBar = {
-            CommonAppBar(title = "Good morning, Rishad")
+            CommonAppBar(title = "Good morning, John")
         },
         peekHeight = AppTheme.dimens.peekHeight,
         backLayerContent = {
