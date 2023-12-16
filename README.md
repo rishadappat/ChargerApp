@@ -25,7 +25,7 @@ Architecture
 Please find the project folder structure.
 
  Please find the screenshots below
-
+ 
  <table>
   <tr>
     <td><img src="screens/home.png" width=270 height=585></td>
