@@ -28,8 +28,8 @@ Please find the project folder structure.
 
  Please find the screenshots below
 
- https://github.com/rishadappat/ChargerApp/assets/12482829/446d434a-92f1-4e85-aa56-390bec91e64c
- 
+https://github.com/rishadappat/ChargerApp/assets/12482829/df034988-cac4-45b0-8d84-ac3e4e136197
+  
  <table>
   <tr>
     <td><img src="screens/home.png" width=270 height=585></td>
