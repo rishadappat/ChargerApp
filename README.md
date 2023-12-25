@@ -1,6 +1,6 @@
 # ChargeApp
 
-> A car car charging and battery information application with charger locations.
+> A car charging and battery information application with charger locations.
 > Implemented using Kotlin, Jetpack Compose in MVVM architecture.
 
 ## Please find the documentation regarding the project.
