@@ -52,7 +52,7 @@ https://github.com/rishadappat/ChargerApp/assets/12482829/df034988-cac4-45b0-8d8
  It was implemented using drawing paths using Bézier curves. Additionally I have added the curves at the beginning and the end of the shape to create the Rounded-cornered curve-notched shape.
 
  # The dashboard scroll and expanding headerview.
- I was planning to implement 'Collapsible Toolbar Layout' which was available in the older xml based desing in Android. But, nothing similar was available in compose. Then I have remembered about Backdrop View which was available in Flutter. I was implemented one in my ownproject as well. You can find the source code in the blow repository.<br/>
+ I was planning to implement 'Collapsible Toolbar Layout' which was available in the older xml based design in Android. But, nothing similar was available in compose. Then I have remembered about BackdropView which was available in Flutter. I was implemented one in my ownproject as well. You can find the source code in the blow repository.<br/>
  https://github.com/rishadappat/Bookledge<br/>
  It was available for jetpack compose as well. So I have decided to implement it using BackdropScaffold.<br/>
  # The animations
