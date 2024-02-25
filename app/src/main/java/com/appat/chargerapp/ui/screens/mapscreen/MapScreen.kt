@@ -1,7 +1,6 @@
 package com.appat.chargerapp.ui.screens.mapscreen
 
 import androidx.annotation.DrawableRes
-import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
@@ -34,26 +33,12 @@ fun MapScreen() {
     val context = LocalContext.current
     val viewModel: DashboardScreenViewModel = hiltViewModel()
     val uiState = viewModel.uiState.collectAsStateWithLifecycle()
-    val darkMode = isSystemInDarkTheme()
-    val isDark by remember {
-        mutableStateOf(darkMode)
-    }
-    val mapStyleFile = if(isDark) R.raw.map_style_dark else R.raw.map_style
-    val mapStyle by remember {
-        mutableStateOf(MapStyleOptions.loadRawResourceStyle(context, mapStyleFile))
-    }
     val mapUiSettings by remember {
         mutableStateOf(
             MapUiSettings(mapToolbarEnabled = false,
                 myLocationButtonEnabled = false,
                 zoomControlsEnabled = false)
         )
-    }
-    val properties by remember {
-        mutableStateOf(MapProperties(
-            isMyLocationEnabled = false,
-            isBuildingEnabled = true,
-            mapStyleOptions = mapStyle))
     }
     val userLocation by remember {
         mutableStateOf(getDummyUserLocation())
@@ -77,7 +62,9 @@ fun MapScreen() {
                 modifier = Modifier.fillMaxSize(),
                 cameraPositionState = cameraPositionState,
                 uiSettings = mapUiSettings,
-                properties = properties,
+                properties = MapProperties(isMyLocationEnabled = false,
+                    isBuildingEnabled = true,
+                    mapStyleOptions = MapStyleOptions.loadRawResourceStyle(context, R.raw.map_style)),
             ) {
                 uiState.value.allStations.forEach { station ->
                     StationMarker(

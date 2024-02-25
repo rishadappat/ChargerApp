@@ -4,6 +4,7 @@ import android.content.Context
 import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.preferencesDataStore
+import com.appat.chargerapp.data.datastore.DataStoreUtility
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -11,15 +12,12 @@ import dagger.hilt.android.qualifiers.ApplicationContext
 import dagger.hilt.components.SingletonComponent
 import javax.inject.Singleton
 
-@Module
 @InstallIn(SingletonComponent::class)
-object DatastoreModule {
-
+@Module
+object DataStoreModule {
     @Singleton
     @Provides
-    fun providesDatastore(@ApplicationContext context: Context): DataStore<Preferences> {
-        return context.dataStore;
+    fun provideDataStoreUtility(@ApplicationContext appContext: Context) : DataStoreUtility {
+        return DataStoreUtility(appContext)
     }
 }
-
-val Context.dataStore: DataStore<Preferences> by preferencesDataStore("chargerApp")

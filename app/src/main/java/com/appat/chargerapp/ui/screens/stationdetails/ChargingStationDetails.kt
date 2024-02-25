@@ -105,13 +105,8 @@ fun ChargingStationDetails(id: Long?) {
     }) {
         Box(modifier = Modifier
             .fillMaxSize()) {
-            val darkMode = isSystemInDarkTheme()
-            val isDark by remember {
-                mutableStateOf(darkMode)
-            }
-            val mapStyleFile = if(isDark) R.raw.map_style_dark else R.raw.map_style
             val mapStyle by remember {
-                mutableStateOf(MapStyleOptions.loadRawResourceStyle(context, mapStyleFile))
+                mutableStateOf(MapStyleOptions.loadRawResourceStyle(context, R.raw.map_style))
             }
             val mapUiSettings by remember {
                 mutableStateOf(
