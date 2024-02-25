@@ -61,7 +61,8 @@ fun dashboardMotionScene(): MotionScene {
                 top.linkTo(parent.top)
                 start.linkTo(parent.start, (0).dp)
                 end.linkTo(parent.end, (0).dp)
-                alpha = 0.2f
+                rotationX = 30f
+                alpha = 0.3f
             }
         }
         val finalConstraintSet = constraintSet {
@@ -96,6 +97,7 @@ fun dashboardMotionScene(): MotionScene {
                 top.linkTo(parent.top, -(50).dp)
                 width = Dimension.percent(0.5f)
                 end.linkTo(parent.end, 0.dp)
+                rotationZ = -90f
                 alpha = 0.2f
             }
         }
