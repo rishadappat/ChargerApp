@@ -2,9 +2,7 @@ package com.appat.chargerapp.ui.screens.stationdetails
 
 import android.location.Location
 import android.util.Log
-import androidx.compose.animation.core.animateDpAsState
 import androidx.compose.foundation.Image
-import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -48,7 +46,9 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import androidx.navigation.NavHostController
 import com.appat.chargerapp.R
+import com.appat.chargerapp.data.models.ChargingStation
 import com.appat.chargerapp.ui.screens.mapscreen.StationMarker
 import com.appat.chargerapp.utility.getDistance
 import com.appat.chargerapp.utility.getDummyUserLocation
@@ -61,6 +61,10 @@ import com.google.maps.android.compose.MapProperties
 import com.google.maps.android.compose.MapUiSettings
 import com.google.maps.android.compose.rememberCameraPositionState
 import kotlinx.coroutines.launch
+
+fun NavHostController.gotoStationDetails(chargingStation: ChargingStation) {
+    navigate("ChargingStationDetails/${chargingStation.id}")
+}
 
 @OptIn(ExperimentalMaterialApi::class)
 @Composable

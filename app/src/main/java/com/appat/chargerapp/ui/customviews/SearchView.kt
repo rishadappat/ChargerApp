@@ -14,10 +14,7 @@ import androidx.compose.material.Text
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Search
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.getValue
-import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
-import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.focus.FocusRequester
@@ -28,14 +25,16 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import com.appat.chargerapp.ui.screens.dashboard.viewmodel.DashboardScreenViewModel
 import com.appat.chargerapp.ui.theme.secondaryText
 import com.appat.chargerapp.utility.clearFocusOnKeyboardDismiss
 
 @Composable
-fun SearchField(placeholder: String, onValueChange: (String) -> Unit) {
-    var searchText by remember {
-        mutableStateOf("")
-    }
+fun SearchField(placeholder: String,
+                viewModel: DashboardScreenViewModel
+) {
+    val uiState = viewModel.uiState.collectAsStateWithLifecycle()
     Row(modifier = Modifier
         .background(shape = RoundedCornerShape(10.dp),
             color = Color.White),
@@ -57,17 +56,16 @@ fun SearchField(placeholder: String, onValueChange: (String) -> Unit) {
                 .fillMaxWidth()
                 .focusRequester(focusRequester)
                 .clearFocusOnKeyboardDismiss(),
-            value = searchText,
+            value = uiState.value.searchText,
             onValueChange = { value ->
-                searchText = value
-                onValueChange(searchText)
+                viewModel.performSearch(value)
             },
             textStyle = searchViewTextStyle,
             singleLine = true,
             cursorBrush = SolidColor(MaterialTheme.colors.primary),
             decorationBox = { innerTextField ->
                 Row(modifier = Modifier.fillMaxWidth()) {
-                    if (searchText.isEmpty()) {
+                    if (uiState.value.searchText.isEmpty()) {
                         Text(
                             modifier = Modifier.fillMaxWidth(),
                             text = placeholder,

@@ -19,7 +19,8 @@ import com.appat.chargerapp.ui.theme.AppTheme
 
 @OptIn(ExperimentalMaterialApi::class)
 @Composable
-fun DashboardScreen(onClick: (ChargingStation) -> Unit = {}) {
+fun DashboardScreen(onItemClick: (ChargingStation) -> Unit = {},
+                    onViewAllClick: () -> Unit = {}) {
     val scaffoldState = rememberBackdropScaffoldState(BackdropValue.Revealed)
     val progress = if(scaffoldState.progress.to != BackdropValue.Revealed) {
         scaffoldState.progress.fraction
@@ -43,7 +44,9 @@ fun DashboardScreen(onClick: (ChargingStation) -> Unit = {}) {
         frontLayerScrimColor = Color.Unspecified,
         frontLayerElevation = 0.dp,
         frontLayerContent = {
-            FrontLayer(scaffoldState = scaffoldState, onClick = onClick)
+            FrontLayer(scaffoldState = scaffoldState,
+                onItemClick = onItemClick,
+                onViewAllClick = onViewAllClick)
         }
     )
 }

@@ -6,7 +6,6 @@ import com.appat.chargerapp.data.models.ChargingStation
 import com.appat.chargerapp.data.repository.ChargingStationRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.CoroutineDispatcher
-import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.update
@@ -35,35 +34,27 @@ class DashboardScreenViewModel @Inject constructor(
         }
         _uiState.update { currentState ->
             currentState.copy(
-                filteredStations = chargingStations.stations
+                filteredStations = chargingStations.stations.filter { it.name.contains(_uiState.value.searchText, true) }
             )
         }
     }
 
-    fun getChargingStationById(id: Long) = viewModelScope.launch(Dispatchers.Default) {
-        _uiState.value.allStations.filter { it.id == id }
-    }
-
-    fun performSearch(searchText: String = "") {
-        if(searchText.isEmpty()) {
-            _uiState.update { currentState ->
-                currentState.copy(
-                    filteredStations = _uiState.value.allStations
-                )
-            }
+    fun performSearch(searchText: String) {
+        _uiState.update { currentState ->
+            currentState.copy(
+                searchText = searchText
+            )
         }
-        else {
-            val stations = _uiState.value.allStations.filter { it.name.contains(searchText, true) }
-            _uiState.update { currentState ->
-                currentState.copy(
-                    filteredStations = stations
-                )
-            }
+        _uiState.update { currentState ->
+            currentState.copy(
+                filteredStations = _uiState.value.allStations.filter { it.name.contains(_uiState.value.searchText, true) }
+            )
         }
     }
 }
 
 data class DashboardScreenState(
+    val searchText: String = "",
     val allStations: List<ChargingStation> = listOf(),
     val filteredStations: List<ChargingStation> = listOf()
 )

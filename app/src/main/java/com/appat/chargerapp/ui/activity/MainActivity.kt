@@ -13,7 +13,6 @@ import androidx.compose.material.Scaffold
 import androidx.compose.material.Surface
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.navigation.compose.rememberNavController
 import com.appat.chargerapp.navigation.AppBottomNavigation
 import com.appat.chargerapp.navigation.NavigationGraph
 import com.appat.chargerapp.navigation.rememberAppState

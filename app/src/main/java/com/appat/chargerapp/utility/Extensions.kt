@@ -18,8 +18,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import kotlinx.serialization.json.Json
 
-suspend inline fun <reified T> Context.readRawJson(@RawRes rawResId: Int): T = withContext(
-    Dispatchers.IO) {
+suspend inline fun <reified T> Context.readRawJson(@RawRes rawResId: Int): T = withContext(Dispatchers.IO) {
     resources.openRawResource(rawResId).bufferedReader().use {
         Json.decodeFromString(it.readText())
     }

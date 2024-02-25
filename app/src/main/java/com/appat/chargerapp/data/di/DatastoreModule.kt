@@ -1,9 +1,6 @@
 package com.appat.chargerapp.data.di
 
 import android.content.Context
-import androidx.datastore.core.DataStore
-import androidx.datastore.preferences.core.Preferences
-import androidx.datastore.preferences.preferencesDataStore
 import com.appat.chargerapp.data.datastore.DataStoreUtility
 import dagger.Module
 import dagger.Provides

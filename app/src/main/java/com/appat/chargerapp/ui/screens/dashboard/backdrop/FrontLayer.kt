@@ -6,7 +6,6 @@ import androidx.compose.animation.core.EaseOut
 import androidx.compose.animation.core.tween
 import androidx.compose.animation.scaleIn
 import androidx.compose.animation.scaleOut
-import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -48,10 +47,11 @@ import com.appat.chargerapp.ui.screens.dashboard.viewmodel.DashboardScreenViewMo
 import com.appat.chargerapp.ui.shape.NotchedRoundedCorners
 import kotlinx.coroutines.launch
 
-@OptIn(ExperimentalMaterialApi::class, ExperimentalFoundationApi::class)
+@OptIn(ExperimentalMaterialApi::class)
 @Composable
 fun FrontLayer(scaffoldState: BackdropScaffoldState,
-               onClick: (ChargingStation) -> Unit = {}) {
+               onItemClick: (ChargingStation) -> Unit = {},
+               onViewAllClick: () -> Unit = {}) {
     val viewModel: DashboardScreenViewModel = hiltViewModel()
     val uiState = viewModel.uiState.collectAsStateWithLifecycle()
     val revealed = scaffoldState.targetValue == BackdropValue.Revealed
@@ -103,7 +103,7 @@ fun FrontLayer(scaffoldState: BackdropScaffoldState,
                             fontWeight = FontWeight.Bold,
                             fontSize = 18.sp)
                         Spacer(Modifier.weight(1f))
-                        TextButton(onClick = {  }) {
+                        TextButton(onClick = { onViewAllClick() }) {
                             Text(text = "View All", color = MaterialTheme.colors.onSecondary)
                         }
                     }
@@ -115,7 +115,7 @@ fun FrontLayer(scaffoldState: BackdropScaffoldState,
                 }
                 items(uiState.value.allStations.size) {
                     val item = uiState.value.allStations[it]
-                    ChargingStationListItem(chargingStation = item, onClick = onClick)
+                    ChargingStationListItem(chargingStation = item, onClick = onItemClick)
                 }
             }
         }
