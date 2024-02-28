@@ -7,6 +7,8 @@ import androidx.compose.material.ExperimentalMaterialApi
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.rememberBackdropScaffoldState
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.derivedStateOf
+import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.RectangleShape
@@ -22,10 +24,14 @@ import com.appat.chargerapp.ui.theme.AppTheme
 fun DashboardScreen(onItemClick: (ChargingStation) -> Unit = {},
                     onViewAllClick: () -> Unit = {}) {
     val scaffoldState = rememberBackdropScaffoldState(BackdropValue.Revealed)
-    val progress = if(scaffoldState.progress.to != BackdropValue.Revealed) {
-        scaffoldState.progress.fraction
-    } else {
-        1f - scaffoldState.progress.fraction
+    val progress = remember {
+        derivedStateOf {
+            if(scaffoldState.progress.to != BackdropValue.Revealed) {
+                scaffoldState.progress.fraction
+            } else {
+                1f - scaffoldState.progress.fraction
+            }
+        }
     }
     BackdropScaffold(
         modifier = Modifier

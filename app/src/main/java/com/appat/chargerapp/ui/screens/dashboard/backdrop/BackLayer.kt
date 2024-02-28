@@ -14,6 +14,7 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ElectricBolt
 import androidx.compose.material.icons.filled.MoreTime
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.layout.layoutId
@@ -31,13 +32,15 @@ import com.appat.chargerapp.ui.motionscene.dashboardMotionScene
 import com.appat.chargerapp.ui.theme.AppTheme
 
 @Composable
-fun BackLayer(progress: Float) {
+fun BackLayer(progress: State<Float>) {
+    val carImage = painterResource(R.drawable.polestar_3)
+    val motionScene = dashboardMotionScene()
     Box(modifier = Modifier
         .fillMaxHeight(AppTheme.dimens.backLayerHeight)
         .fillMaxWidth()) {
         MotionLayout(
-            dashboardMotionScene(),
-            progress = progress,
+            motionScene,
+            progress = progress.value,
             Modifier
                 .fillMaxSize()
                 .align(Alignment.Center)
@@ -45,7 +48,7 @@ fun BackLayer(progress: Float) {
             val fontSize = customFontSize(ViewRef.CarName.name, "textSize")
             DottedDecorationView(modifier = Modifier
                 .layoutId(ViewRef.DottedView))
-            Image(painter = painterResource(R.drawable.polestar_3),
+            Image(painter = carImage,
                 contentDescription = "carImage",
                 modifier = Modifier
                     .layoutId(ViewRef.CarImage.name))

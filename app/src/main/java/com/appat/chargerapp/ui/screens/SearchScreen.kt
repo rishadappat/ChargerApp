@@ -17,15 +17,11 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.navigation.NavHostController
 import com.appat.chargerapp.data.models.ChargingStation
-import com.appat.chargerapp.navigation.BottomNavItem
 import com.appat.chargerapp.navigation.Route
 import com.appat.chargerapp.ui.customviews.ChargingStationListItem
 import com.appat.chargerapp.ui.customviews.CommonAppBar
 import com.appat.chargerapp.ui.customviews.SearchField
 import com.appat.chargerapp.ui.screens.dashboard.viewmodel.DashboardScreenViewModel
-fun NavHostController.gotoSearch() {
-    navigate(BottomNavItem.Search.screenRoute)
-}
 
 fun NavHostController.gotoChargingStationList() {
     navigate(Route.ChargingStationList.value)

@@ -31,6 +31,8 @@ import androidx.compose.material.TextButton
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.MoreHoriz
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.derivedStateOf
+import androidx.compose.runtime.*
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -54,7 +56,11 @@ fun FrontLayer(scaffoldState: BackdropScaffoldState,
                onViewAllClick: () -> Unit = {}) {
     val viewModel: DashboardScreenViewModel = hiltViewModel()
     val uiState = viewModel.uiState.collectAsStateWithLifecycle()
-    val revealed = scaffoldState.targetValue == BackdropValue.Revealed
+    val revealed by remember {
+        derivedStateOf {
+            scaffoldState.targetValue == BackdropValue.Revealed
+        }
+    }
     val scope = rememberCoroutineScope()
     Box(modifier = Modifier
         .fillMaxWidth()) {

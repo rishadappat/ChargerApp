@@ -20,8 +20,8 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.draw.rotate
 import androidx.compose.ui.graphics.StrokeCap
+import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -62,7 +62,9 @@ fun ChargingCircularProgress(
         CircularProgressIndicator(
             modifier = Modifier
                 .fillMaxSize()
-                .rotate(degrees = rotateAnimation),
+                .graphicsLayer {
+                    rotationZ = rotateAnimation
+                },
             backgroundColor = MaterialTheme.colors.onPrimary.copy(alpha = 0.3f),
             strokeCap = StrokeCap.Round,
             progress = progress,
